@@ -9,8 +9,8 @@ class Article(models.Model):
 
     def __str__(self):
         return self.title
-
-    this works with intger for primary keys
+    
+#   this works with intger for primary keys
     def get_absolute_url(self):
         return reverse('article_detail', args=[str(self.id)])
     
